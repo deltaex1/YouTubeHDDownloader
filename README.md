@@ -1,6 +1,6 @@
 # YouTubeHDDownloader
 YouTube utilizes DASH, which adapatively stores resolutions >720p in separate video and audio tracks.
-This script downloads YouTube's DASH videos stream, audio stream, and SRT subtitles using YouTube's API search, then combines HD disparate Video and Audio streams using ffmpeg into a single 1080p MP4 file; and can be re-run to capture new video search results that had not previously been downloaded. A random timer delay has been implemented to slow down the download of each video to avoid overloading YouTube's servers and violating its ToS.
+This script downloads YouTube's DASH videos stream, audio stream, and SRT subtitles using YouTube's API search and pytube3, then combines HD disparate Video and Audio streams using ffmpeg into a single 1080p MP4 file; and can be re-run to capture new video search results that had not previously been downloaded. A random timer delay has been implemented to slow down the download of each video to avoid overloading YouTube's servers and violating its ToS.
 
 This script has logging capabilities with some levels of error handling (most notably API quota), and can be re-run to prevent downloading videos that has already been downloaded previously. (os.path.exists)
 
